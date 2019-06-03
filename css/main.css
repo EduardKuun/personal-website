@@ -58,8 +58,8 @@ body {
   animation-duration: 1.1s;
   animation-name: fade;
   opacity: 0;
-  background-color: var(--light-color);
-  color: var(--dark-text-color);
+  background-color: #fafafa;
+  color: #222;
   font-weight: 0 !important;
 }
 hr {
@@ -70,13 +70,13 @@ hr {
   width: 13px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--light-color); 
+  background: #fafafa; 
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--dark-green-color);
+  background: #13aa52;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--green-color); 
+  background: #32b844; 
 }
 ::-webkit-scrollbar-thumb:active {
   background: #149425;
@@ -93,7 +93,7 @@ hr {
   color: #666 !important;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand:hover {
-  color: var(--dark-green-color) !important;
+  color: #13aa52 !important;
 }
 .navbar {
   background: transparent !important;
@@ -108,7 +108,7 @@ hr {
   font-size: 1.1rem;
 }
 .nav-item.nav-link.active {
-  color: var(--dark-green-color) !important;
+  color: #13aa52 !important;
 }
 .icon-bar {
   display: block;
@@ -146,7 +146,7 @@ hr {
   transition: 0.2s;
 }
 .navbar-brand:hover {
-  color: var(--dark-green-color) !important;
+  color: #13aa52 !important;
 }
 #branding-flicker {
   animation-iteration-count: infinite;
@@ -189,14 +189,14 @@ section {
   background-position: center;
   background-repeat: none;
   background-size: cover;
-  color: var(--light-text-color);
+  color: #f4f4f4;
 }
 #landing > div {
   width: 80%;
 }
 #landing h1 {
   font-size: 3rem !important;
-  color: var(--light-text-color) !important;
+  color: #f4f4f4 !important;
   font-weight: 100 !important;
   text-shadow: 1px 1px 3px rgba(10,10,10,0.6);
 }
@@ -218,16 +218,16 @@ section {
   border-radius: 2px;
 }
 #landing-learn {
-  background-color: var(--dark-green-color);
+  background-color: #13aa52;
 }
 #landing-learn a {
-  color: var(--light-text-color);
+  color: #f4f4f4;
 }
 #landing-contact {
-  background-color: var(--light-color);
+  background-color: #fafafa;
 }
 #landing-contact a {
-  color: var(--dark-green-color);
+  color: #13aa52;
 }
 #landing-learn:hover, #landing-contact:hover {
   transform: translateY(-3px);
@@ -239,7 +239,7 @@ section {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   font-size: 4rem;
-  color: var(--light-color);
+  color: #fafafa;
   position: absolute;
   bottom: 0;
   left: 49%;
@@ -247,7 +247,7 @@ section {
   text-shadow: 2px 2px 5px rgba(10,10,10,0.6);
 }
 #landing-down-arrow a:hover {
-  color: var(--dark-green-color);
+  color: #13aa52;
 }
 
 /* ABOUT */
@@ -353,11 +353,11 @@ section {
   font-size: 2.3rem;
 }
 #projects h5 {
-  color: var(--dark-text-color);
+  color: #222;
   margin-top: 10px;
 }
 #projects p {
-  color: var(--gray-color);
+  color: #7a7a7a;
   font-size: 1.1rem;
 }
 .owl-carousel {
@@ -378,16 +378,16 @@ section {
   transition: 0.2s;
 }
 .owl-prev:hover span, .owl-next:hover span {
-  color: var(--dark-green-color);
+  color: #13aa52;
 }
 
 /* CONTACT */
 #contact {
-  background-color: var(--dark-green-color);
+  background-color: #13aa52;
   position: relative;
   top: 10px;
   box-shadow: 0 -1px 5px 0 rgba(50,50,50,0.6);
-  color: var(--light-color);
+  color: #fafafa;
   clip-path: polygon(13% 18%, 100% 35%, 100% 100%, 0 100%, 0 46%);
 }
 #contact > div {
@@ -399,7 +399,7 @@ section {
   text-shadow: 1px 1px 2px rgba(10,10,10,0.6);
 }
 #contact a {
-  color: var(--dark-color);
+  color: #1f2125;
 }
 #contact-mail {
   font-size: 1.3rem;
@@ -410,13 +410,13 @@ section {
   margin: 0 10px;
 }
 .contact-icon a:hover i {
-  color: var(--dark-dark-color);
+  color: #121316;
 }
 
 /* FOOTER */
 #footer {
-  background-color: var(--dark-dark-color);
-  color: var(--light-text-color);
+  background-color: #121316;
+  color: #f4f4f4;
   text-align: left;
 }
 #top-footer, #footer-details {
@@ -431,7 +431,7 @@ section {
 }
 #footer a {
   text-decoration: none;
-  color: var(--gray-color);
+  color: #7a7a7a;
   padding: 0;
   margin: 0;
 }
@@ -440,13 +440,13 @@ section {
   text-align: left;
 }
 #footer-branding > a {
-  color: var(--dark-green-color);
+  color: #13aa52;
 }
 #footer a:hover {
   text-decoration: underline;
 }
 #footer-branding > p {
-  color: var(--gray-color);
+  color: #7a7a7a;
 }
 #footer-branding > p, #footer h1 {
   padding: 0;
@@ -454,7 +454,7 @@ section {
 }
 #footer > span > p {
   text-align: center;
-  color: var(--gray-color);
+  color: #7a7a7a;
   filter: brightness(70%);
   padding: 0;
   margin: 50px 0 0 0;

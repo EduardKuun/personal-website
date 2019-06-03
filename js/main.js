@@ -13,14 +13,14 @@ window.onscroll = function () {
     document.getElementsByClassName("navbar")[0].className =
       "navbar navbar-expand-lg navbar-light bg-light";
     document.getElementsByClassName("navbar")[0].style.cssText =
-      "background-color: var(--light-color) !important; padding: 5px 20px !important; box-shadow: 0 1px 3px rgba(50, 50, 50, 0.5) !important;";
+      "background-color: #fafafa !important; padding: 5px 20px !important; box-shadow: 0 1px 3px rgba(50, 50, 50, 0.5) !important;";
   } else {
     let collapsedDetails = document.getElementById("navbar-toggle").className;
     if (collapsedDetails === "navbar-toggler") {
       document.getElementsByClassName("navbar")[0].className =
         "navbar navbar-expand-lg navbar-light bg-light";
       document.getElementsByClassName("navbar")[0].style.cssText =
-        "background-color: var(--light-color) !important; box-shadow: 0 1px 3px rgba(50, 50, 50, 0.5) !important;";
+        "background-color: #fafafa !important; box-shadow: 0 1px 3px rgba(50, 50, 50, 0.5) !important;";
     } else {
       document.getElementsByClassName("navbar")[0].className =
         "navbar navbar-expand-lg navbar-dark bg-light";
@@ -42,7 +42,7 @@ window.onscroll = function () {
     var one = otherOne + "Button";
     var two = otherTwo + "Button";
     document.getElementById(change).style.cssText =
-      "color: var(--dark-green-color) !important;";
+      "color: #13aa52 !important;";
     document.getElementById(one).style.cssText = "color: #444;";
     document.getElementById(two).style.cssText = "color: #444;";
   }
@@ -67,14 +67,14 @@ function ToggleMenu() {
   if (scrolledFromTop >= 20) {
     if (navClass == "navbar-toggler collapsed") {
       document.getElementsByClassName("navbar")[0].style.cssText =
-        "background-color: var(--light-color) !important; padding: 5px 20px !important; box-shadow: 0 1px 3px rgba(50, 50, 50, 0.5) !important;";
+        "background-color: #fafafa !important; padding: 5px 20px !important; box-shadow: 0 1px 3px rgba(50, 50, 50, 0.5) !important;";
     }
   } else {
     if (navClass == "navbar-toggler collapsed") {
       document.getElementsByClassName("navbar")[0].className =
         "navbar navbar-expand-lg navbar-light bg-light";
       document.getElementsByClassName("navbar")[0].style.cssText =
-        "background-color: var(--light-color) !important; box-shadow: 0 1px 3px rgba(50, 50, 50, 0.5) !important;";
+        "background-color: #fafafa !important; box-shadow: 0 1px 3px rgba(50, 50, 50, 0.5) !important;";
     } else {
       document.getElementsByClassName("navbar")[0].className =
         "navbar navbar-expand-lg navbar-dark bg-light";
@@ -103,7 +103,7 @@ $(document).ready(function () {
         items: 2
       },
       1300: {
-        items: 2.9
+        items: 3.3
       }
     }
   });
