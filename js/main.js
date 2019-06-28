@@ -9,7 +9,7 @@ $(".navbar-nav>a").on("click", function () {
 
 window.onscroll = function () {
   let scrolledFromTop = window.pageYOffset;
-  if (scrolledFromTop >= 20) {
+  if (scrolledFromTop >= 100) {
     document.getElementsByClassName("navbar")[0].className =
       "navbar navbar-expand-lg navbar-light bg-light";
     document.getElementsByClassName("navbar")[0].style.cssText =
@@ -32,31 +32,38 @@ window.onscroll = function () {
   var about = document.getElementById("about");
   var skills = document.getElementById("skills");
   var projects = document.getElementById("projects");
+  var contact = document.getElementById("contact");
 
   var aboutOffset = about.getBoundingClientRect().top;
   var skillsOffset = skills.getBoundingClientRect().top;
   var projectsOffset = projects.getBoundingClientRect().top;
+  var contactOffset = contact.getBoundingClientRect().top;
 
-  function changeCSS(toChange, otherOne, otherTwo) {
+  function changeCSS(toChange, otherOne, otherTwo, otherThree) {
     var change = toChange + "Button";
     var one = otherOne + "Button";
     var two = otherTwo + "Button";
+    var three = otherThree + "Button";
     document.getElementById(change).style.cssText =
       "color: #13aa52 !important;";
     document.getElementById(one).style.cssText = "color: #444;";
     document.getElementById(two).style.cssText = "color: #444;";
+    document.getElementById(three).style.cssText = "color: #444;";
   }
 
-  if (aboutOffset <= 200 && aboutOffset >= -250) {
-    changeCSS("about", "skills", "projects");
+  if (aboutOffset <= 200 && aboutOffset >= -550) {
+    changeCSS("about", "skills", "projects", "contact");
   } else if (skillsOffset <= 200 && skillsOffset >= -250) {
-    changeCSS("skills", "about", "projects");
-  } else if (projectsOffset <= 200 && projectsOffset >= -250) {
-    changeCSS("projects", "skills", "about");
+    changeCSS("skills", "about", "projects", "contact");
+  } else if (projectsOffset <= 200 && projectsOffset >= -350) {
+    changeCSS("projects", "skills", "about", "contact");
+  } else if (contactOffset <= 200 && contactOffset >= -250) {
+    changeCSS("contact", "skills", "about", "projects");
   } else {
     document.getElementById("aboutButton").style.cssText = "color: #444;";
     document.getElementById("skillsButton").style.cssText = "color: #444;";
     document.getElementById("projectsButton").style.cssText = "color: #444;";
+    document.getElementById("contactButton").style.cssText = "color: #444;";
   }
 };
 
