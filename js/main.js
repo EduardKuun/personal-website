@@ -71,7 +71,7 @@ function ToggleMenu() {
   let navbarToggler = document.getElementById("navbar-toggle");
   let navClass = navbarToggler.className;
   let scrolledFromTop = window.pageYOffset;
-  if (scrolledFromTop >= 20) {
+  if (scrolledFromTop >= 100) {
     if (navClass == "navbar-toggler collapsed") {
       document.getElementsByClassName("navbar")[0].style.cssText =
         "background-color: #fafafa !important; padding: 5px 20px !important; box-shadow: 0 1px 3px rgba(50, 50, 50, 0.5) !important;";
@@ -110,7 +110,7 @@ $(document).ready(function () {
         items: 2
       },
       1300: {
-        items: 3.3
+        items: 2.9
       }
     }
   });
