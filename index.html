@@ -129,10 +129,24 @@
     </section>
     <section id="contact">
       <div>
-        <br><br><br><br><br><br><br>
+        <br>
         <h2>Get In Touch With Me</h2>
         <h5>Send me an email or connect with me online.</h5>
         <br>
+        <form name="contact" netlify>
+          <p>
+            <input type="text" name="name" placeholder="Name" required>
+          </p>
+          <p>
+            <input type="email" name="email" placeholder="Email" required>
+          </p>
+          <p>
+            <textarea name="message" id="message" placeholder="Enter message here..." rows="4" required></textarea>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
         <div class="contact-icon">
           <a href="https://www.github.com/EduardKuun" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
         </div>

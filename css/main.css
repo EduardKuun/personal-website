@@ -327,6 +327,10 @@ section {
   padding: 5px;
   height: 65px;
   filter: grayscale(100%);
+  transition: 0.3s;
+}
+#skills img:hover {
+  transform: scale(1.1);
 }
 
 /* PROJECTS */
@@ -377,12 +381,15 @@ section {
   top: 10px;
   box-shadow: 0 -1px 5px 0 rgba(50,50,50,0.6);
   color: #fafafa;
-  clip-path: polygon(13% 18%, 100% 35%, 100% 100%, 0 100%, 0 46%);
+  clip-path: polygon(10% 0, 100% 11%, 100% 100%, 0 100%, 0 13%);
 }
 #contact > div {
   width: 80%;
   margin: auto;
   text-align: center;
+}
+#contact h2 {
+  padding-top: 70px;
 }
 #contact h2, #contact h5 {
   text-shadow: 1px 1px 2px rgba(10,10,10,0.6);
@@ -400,6 +407,42 @@ section {
 }
 .contact-icon a:hover i {
   color: #121316;
+}
+#contact input {
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px 0 rgba(10,10,10,0.3);
+  outline: none;
+  padding: 5px 10px;
+  width: 60%;
+}
+#contact textarea {
+  background-color: #fff;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px 0 rgba(10,10,10,0.3);
+  outline: none;
+  padding: 5px 10px;
+  resize: none;
+  width: 60%;
+}
+#contact button {
+  background-color: #1f2125;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px 0 rgba(10,10,10,0.3);
+  color: #f4f4f4;
+  font-size: 1.2rem;
+  outline: none;
+  margin: 0 0 10px 0;
+  padding: 8px 30px;
+  transition: 0.2s;
+}
+#contact button:hover {
+  background-color: #121316;
+  box-shadow: 2px 3px 6px 0 rgba(10,10,10,0.3);
+  transform: translateY(-3px);
 }
 
 /* FOOTER */
@@ -491,6 +534,9 @@ section {
   #skills > div > div {
     grid-template-columns: 1fr 1fr !important;
   }
+  #contact input, #contact textarea, #contact button {
+    width: 100% !important;
+  }
 }
 @media(max-width: 991px) {
   #landing-down-arrow a {
@@ -507,5 +553,8 @@ section {
   }
   .navbar-nav a {
     font-size: 1.3rem;
+  }
+  #contact input, #contact textarea, #contact button {
+    width: 60%;
   }
 }
