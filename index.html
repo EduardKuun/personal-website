@@ -1,227 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="author" content="Eduard Kuun">
-  <meta name="description" content="I'm Eduard Kuun, a passionate software developer based in Gauteng, South Africa, looking to improve my skills at every opportunity.">
-  <meta name="keywords" content="eduard kuun, eduard, kuun, programming, website, developer, freelance, design, web, application, software developer, apps, south africa, gauteng, web development, software development, application developer, applications">
-  <!--BOOTSTRAP CSS-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!--FONTAWESOME CSS-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <!--GOOGLE FONTS-->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <!--OWL CAROUSEL-->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <!--MAIN CSS-->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
-  <title>Eduard Kuun | Software Developer</title>
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-light">
-    <a class="navbar-brand" href="."><i class="fas fa-angle-right"></i><span id="branding-flicker">_</span> Eduard Kuun</a>
-    <button onclick="ToggleMenu()" id="navbar-toggle" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="icon-bar top-bar"></span>
-      <span class="icon-bar middle-bar"></span>
-      <span class="icon-bar bottom-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link" href="#about" id="aboutButton">About</a>
-        <a class="nav-item nav-link" href="#skills" id="skillsButton">Skills</a>
-        <a class="nav-item nav-link" href="#projects" id="projectsButton">Projects</a>
-        <a class="nav-item nav-link" href="#contact" id="contactButton">Contact</a>
-      </div>
-    </div>
-  </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="author" content="Eduard Kuun" />
+		<meta
+			name="description"
+			content="I'm Eduard Kuun, a passionate software developer based in Gauteng, South Africa, looking to improve my skills at every opportunity."
+		/>
+		<meta
+			name="keywords"
+			content="eduard kuun, eduard, kuun, programming, website, developer, freelance, design, web, application, software developer, apps, south africa, gauteng, web development, software development, application developer, applications"
+		/>
+		<!--BOOTSTRAP CSS-->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<!--FONTAWESOME CSS-->
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			crossorigin="anonymous"
+		/>
+		<!--GOOGLE FONTS-->
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Inter|Inter:300,400,500,600,700"
+			rel="stylesheet"
+		/>
+		<!--OWL CAROUSEL-->
+		<link rel="stylesheet" href="css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+		<!--MAIN CSS-->
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+		<title>Eduard Kuun | Software Developer</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+			<a class="navbar-brand" href="."
+				><i class="fas fa-angle-right"></i><span id="branding-flicker">_</span> Eduard
+				Kuun</a
+			>
+			<button
+				onclick="ToggleMenu()"
+				id="navbar-toggle"
+				class="navbar-toggler collapsed"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNavAltMarkup"
+				aria-controls="navbarsExampleDefault"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="icon-bar top-bar"></span>
+				<span class="icon-bar middle-bar"></span>
+				<span class="icon-bar bottom-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="#about" id="aboutButton">About</a>
+					<a class="nav-item nav-link" href="#skills" id="skillsButton">Skills</a>
+					<a class="nav-item nav-link" href="#projects" id="projectsButton">Projects</a>
+					<a class="nav-item nav-link" href="#contact" id="contactButton">Contact</a>
+				</div>
+			</div>
+		</nav>
 
-  <div class="main-container">
-    <section id="landing">
-      <div>
-        <h1>Eduard Kuun</h1>
-        <h5>Software Developer</h5>
-        <br>
-        <br>
-        <div id="landing-learn">
-          <a href="#about">About Me</a>
-        </div>
-        <div id="landing-contact">
-          <a href="#contact">Get In Touch</a>
-        </div>
-      </div>
-    </section>
-    <div id="landing-down-arrow"><a href="#about"><i class="fas fa-angle-down"></i></a></div>
-    <section id="about">
-      <div>
-        <div id="about-grid">
-          <div>
-            <img src="img/design.png" alt="Design">
-            <h3>Design</h3>
-            <p>Visually appealing and user friendly UI and UX designs.</p>
-          </div>
-          <div>
-            <img src="img/develop.png" alt="Develop">
-            <h3>Develop</h3>
-            <p>Practical day-to-day problems solved with meticulously crafted code.</p>
-          </div>
-          <div>
-            <img src="img/deploy.png" alt="Deploy">
-            <h3>Deploy</h3>
-            <p>Full-featured applications ready for deployment.</p>
-          </div>
-        </div>
-        <div id="bio-info">
-          <h2>Hi there! I'm Eduard, a software developer from Gauteng, South Africa.</h2>
-          <p>I specialize in <b>full-stack</b> applications and have experience in creating and working on software that can be used to aid practical day-to-day problems, as well as developing interfaces to <b>integrate existing applications</b>. I recognise the importance of clear and concise communication, working in a timely fashion and having a well-structured and organised project setup.</p>
-        </div>
-        <br>
-        <br>
-        <hr>
-      </div>
-    </section>
-    <section id="skills">
-      <div>
-        <h2>My Toolbox</h2>
-        <br>
-        <div>
-          <img src="img/html5.svg" alt="HTML5" title="HTML5">
-          <img src="img/css3.svg" alt="CSS3" title="CSS3">
-          <img src="img/react.svg" alt="React" title="React">
-          <img src="img/js.svg" alt="JavaScript" title="JavaScript">
-          <img src="img/material-ui.svg" alt="Material-UI" title="Material-UI">
-          <img src="img/git.svg" alt="Git" title="Git">
-          <img src="img/csharp.svg" alt="C#" title="C#">
-          <img src="img/netcore.svg" alt=".NET Core" title=".NET Core">
-          <img src="img/sql.svg" alt="SQL Server" title="SQL Server">
-        </div>
-        <br><br>
-        <h2>Integration</h2>
-        <br>
-        <div>
-          <img src="img/sage.png" alt="Sage Evolution" title="Sage Evolution">
-          <img src="img/moodle.png" alt="Moodle" title="Moodle">
-        </div>
-        <br><br><br>
-        <hr>
-      </div>
-    </section>
-    <section id="projects">
-      <div>
-        <h2>My Projects</h2>
-        <br>
-        <div class="owl-carousel">
-          <div>
-            <a href="https://cradlecottages.co.za/" target="_blank" rel="noopener noreferrer"><img src="img/p4.jpg" alt="Cradle Cottages"></a>
-            <h5>Cradle Cottages</h5>
-            <p>Website and branding for self-catering accommodation business.</p>
-          </div>
-          <div>
-            <a href="#projects"><img src="img/p3.jpg" alt="WTF Hub"></a>
-            <h5>Soteria</h5>
-            <p>Enterprise ready support and issue tracking system developed with .NET Core and React.</p>
-          </div>
-          <div>
-            <a href="https://eduardkuun.github.io/photography-portfolio/" target="_blank" rel="noopener noreferrer"><img src="img/p1.jpg" alt="Petri Schoeman"></a>
-            <h5>Petrus Padda</h5>
-            <p>Photography and videography portfolio website.</p>
-          </div>
-          <div>
-            <a href="https://eduardkuun.github.io/shopping-list/" target="_blank" rel="noopener noreferrer"><img src="img/p2.jpg" alt="Shopping List App"></a>
-            <h5>Shoppy</h5>
-            <p>Simple application to create visually appealing shopping lists.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div>
-        <br>
-        <h2>Get In Touch With Me</h2>
-        <h5>Send me an email or connect with me online.</h5>
-        <br>
-        <form name="contact" netlify>
-          <p>
-            <input type="text" name="name" placeholder="Name" required>
-          </p>
-          <p>
-            <input type="email" name="email" placeholder="Email" required>
-          </p>
-          <p>
-            <textarea name="message" id="message" placeholder="Enter message here..." rows="4" required></textarea>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-        <div class="contact-icon">
-          <a href="https://www.github.com/EduardKuun" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="contact-icon">
-          <a href="https://www.linkedin.com/in/eduardkuun" target="_blank" rel="noopener noreferrer" title="Linkedin"><i class="fab fa-linkedin"></i></a>
-        </div>
-        <div>
-          <a id="contact-mail" href="mailto:eduardkuun@outlook.com">eduardkuun@outlook.com</a>
-        </div>
-        <br><br>
-      </div>
-    </section>
-    <footer id="footer">
-      <br><br>
-      <div id="top-footer">
-        <div id="footer-branding">
-          <h1>Eduard Kuun</h1>
-          <p>Software Developer</p>
-          <p><i class="fas fa-map-marker-alt"></i> Gauteng, South Africa</p>
-          <a href="mailto:eduardkuun@outlook.com">eduardkuun@outlook.com</a>
-        </div>
-        <div></div>
-        <div></div>
-      </div>
-      <br>
-      <br>
-      <div id="footer-details">
-        <div>
-          <h2>Menu</h2>
-          <div>
-            <a href="#about">About</a>
-          </div>
-          <div>
-            <a href="#skills">Skills</a>
-          </div>
-          <div>
-            <a href="#projects">Projects</a>
-          </div>
-          <div>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-        <div>
-          <h2>Online</h2>
-          <div>
-            <a href="https://github.com/EduardKuun" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </div>
-          <div>
-            <a href="https://www.linkedin.com/in/eduardkuun/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-          </div>
-        </div>
-      </div>
-      <span>
-        <p>Eduard Kuun &copy; <span id="currentYear"></span></p>
-      </span>
-      <br>
-    </footer>
-  </div>
+		<div class="main-container">
+			<section id="landing">
+				<div>
+					<h1>Eduard Kuun</h1>
+					<h5>Software Developer</h5>
+					<br />
+					<br />
+					<div id="landing-learn">
+						<a href="#about">About Me</a>
+					</div>
+					<div id="landing-contact">
+						<a href="#contact">Get In Touch</a>
+					</div>
+				</div>
+			</section>
+			<div id="landing-down-arrow">
+				<a href="#about"><i class="fas fa-angle-down"></i></a>
+			</div>
+			<section id="about">
+				<div>
+					<div id="about-grid">
+						<div>
+							<img src="img/design.png" alt="Design" />
+							<h3>Design</h3>
+							<p>Visually appealing and user friendly UI and UX designs.</p>
+						</div>
+						<div>
+							<img src="img/develop.png" alt="Develop" />
+							<h3>Develop</h3>
+							<p>Practical day-to-day problems solved with meticulously crafted code.</p>
+						</div>
+						<div>
+							<img src="img/deploy.png" alt="Deploy" />
+							<h3>Deploy</h3>
+							<p>Full-featured applications ready for deployment.</p>
+						</div>
+					</div>
+					<div id="bio-info">
+						<h2>
+							Hi there! I'm Eduard, a software developer from Gauteng, South Africa.
+						</h2>
+						<p>
+							I specialize in <b>full-stack</b> web applications and have experience in
+							creating and working on software that can be used to aid practical
+							day-to-day problems, as well as developing interfaces to
+							<b>integrate existing applications</b>. I recognise the importance of clear
+							and concise communication, working in a timely fashion and having a
+							well-structured and organised project setup.
+						</p>
+					</div>
+					<br />
+					<br />
+					<hr />
+				</div>
+			</section>
+			<section id="skills">
+				<div>
+					<h2>My Toolbox</h2>
+					<br />
+					<div>
+						<img src="img/html5.svg" alt="HTML5" title="HTML5" />
+						<img src="img/css3.svg" alt="CSS3" title="CSS3" />
+						<img src="img/react.svg" alt="React" title="React" />
+						<img src="img/typescript.png" alt="TypeScript" title="TypeScript" />
+						<img src="img/material-ui.svg" alt="Material-UI" title="Material-UI" />
+						<img src="img/csharp.svg" alt="C#" title="C#" />
+						<img src="img/netcore.svg" alt=".NET Core" title=".NET Core" />
+						<img src="img/sql.svg" alt="SQL Server" title="SQL Server" />
+						<img src="img/git.svg" alt="Git" title="Git" />
+						<img
+							src="img/az-pipelines.png"
+							alt="Azure Pipelines"
+							title="Azure Pipelines"
+						/>
+					</div>
+					<br /><br />
+					<h2>Integration</h2>
+					<br />
+					<div>
+						<img src="img/sage.png" alt="Sage Evolution" title="Sage Evolution" />
+						<img src="img/moodle.png" alt="Moodle" title="Moodle" />
+					</div>
+					<br /><br /><br />
+					<hr />
+				</div>
+			</section>
+			<section id="projects">
+				<div>
+					<h2>My Projects</h2>
+					<br />
+					<div class="owl-carousel">
+						<div>
+							<a
+								href="https://cradlecottages.co.za/"
+								target="_blank"
+								rel="noopener noreferrer"
+								><img src="img/p4.jpg" alt="Cradle Cottages"
+							/></a>
+							<h5>Cradle Cottages</h5>
+							<p>Website and branding for self-catering accommodation business.</p>
+						</div>
+						<div>
+							<a href="#projects"><img src="img/p3.jpg" alt="WTF Hub" /></a>
+							<h5>Soteria</h5>
+							<p>
+								Enterprise ready support and issue tracking system developed with .NET
+								Core and React.
+							</p>
+						</div>
+						<div>
+							<a
+								href="https://eduardkuun.github.io/photography-portfolio/"
+								target="_blank"
+								rel="noopener noreferrer"
+								><img src="img/p1.jpg" alt="Petri Schoeman"
+							/></a>
+							<h5>Petrus Padda</h5>
+							<p>Photography and videography portfolio website.</p>
+						</div>
+						<div>
+							<a
+								href="https://eduardkuun.github.io/shopping-list/"
+								target="_blank"
+								rel="noopener noreferrer"
+								><img src="img/p2.jpg" alt="Shopping List App"
+							/></a>
+							<h5>Shoppy</h5>
+							<p>Simple application to create visually appealing shopping lists.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="contact">
+				<div>
+					<br />
+					<h2>Get In Touch With Me</h2>
+					<h5>Send me an email or connect with me online.</h5>
+					<br />
+					<form name="contact" netlify>
+						<p>
+							<input type="text" name="name" placeholder="Name" required />
+						</p>
+						<p>
+							<input type="email" name="email" placeholder="Email" required />
+						</p>
+						<p>
+							<textarea
+								name="message"
+								id="message"
+								placeholder="Enter message here..."
+								rows="4"
+								required
+							></textarea>
+						</p>
+						<p>
+							<button type="submit">Send</button>
+						</p>
+					</form>
+					<div class="contact-icon">
+						<a
+							href="https://www.github.com/EduardKuun"
+							target="_blank"
+							rel="noopener noreferrer"
+							title="GitHub"
+							><i class="fab fa-github"></i
+						></a>
+					</div>
+					<div class="contact-icon">
+						<a
+							href="https://www.linkedin.com/in/eduardkuun"
+							target="_blank"
+							rel="noopener noreferrer"
+							title="Linkedin"
+							><i class="fab fa-linkedin"></i
+						></a>
+					</div>
+					<div>
+						<a id="contact-mail" href="mailto:eduardkuun@outlook.com"
+							>eduardkuun@outlook.com</a
+						>
+					</div>
+					<br /><br />
+				</div>
+			</section>
+			<footer id="footer">
+				<br /><br />
+				<div id="top-footer">
+					<div id="footer-branding">
+						<h1>Eduard Kuun</h1>
+						<p>Software Developer</p>
+						<p><i class="fas fa-map-marker-alt"></i> Gauteng, South Africa</p>
+						<a href="mailto:eduardkuun@outlook.com">eduardkuun@outlook.com</a>
+					</div>
+					<div></div>
+					<div></div>
+				</div>
+				<br />
+				<br />
+				<div id="footer-details">
+					<div>
+						<h2>Menu</h2>
+						<div>
+							<a href="#about">About</a>
+						</div>
+						<div>
+							<a href="#skills">Skills</a>
+						</div>
+						<div>
+							<a href="#projects">Projects</a>
+						</div>
+						<div>
+							<a href="#contact">Contact</a>
+						</div>
+					</div>
+					<div>
+						<h2>Online</h2>
+						<div>
+							<a
+								href="https://github.com/EduardKuun"
+								target="_blank"
+								rel="noopener noreferrer"
+								>GitHub</a
+							>
+						</div>
+						<div>
+							<a
+								href="https://www.linkedin.com/in/eduardkuun/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Linkedin</a
+							>
+						</div>
+					</div>
+				</div>
+				<span>
+					<p>Eduard Kuun &copy; <span id="currentYear"></span></p>
+				</span>
+				<br />
+			</footer>
+		</div>
 
-  <!--BOOTSTRAP JS-->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <!--OWL CAROUSEL JS-->
-  <script src="js/owl.carousel.min.js"></script>
-  <!--MAIN JS-->
-  <script src="js/main.js"></script>
-</body>
+		<!--BOOTSTRAP JS-->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<!--OWL CAROUSEL JS-->
+		<script src="js/owl.carousel.min.js"></script>
+		<!--MAIN JS-->
+		<script src="js/main.js"></script>
+	</body>
 </html>
