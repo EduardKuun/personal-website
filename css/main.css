@@ -200,7 +200,7 @@ section {
 }
 #landing-learn,
 #landing-contact {
-	border-radius: 2px;
+	border-radius: 8px;
 	box-shadow: 2px 2px 5px 0 rgba(10, 10, 10, 0.3);
 	display: inline-block;
 	margin: 10px 15px;
@@ -220,8 +220,14 @@ section {
 }
 #landing-learn:hover,
 #landing-contact:hover {
-	transform: translateY(-3px);
+	transform: translateY(-2px);
 	box-shadow: 2px 3px 6px 0 rgba(10, 10, 10, 0.3);
+}
+#landing-learn:hover {
+	background-color: #03a046;
+}
+#landing-contact:hover {
+	background-color: #fff;
 }
 #landing-down-arrow a {
 	display: inline-block;
@@ -273,13 +279,14 @@ section {
 	order: 1;
 }
 #about-grid > div {
-	border-radius: 5px;
+	border-radius: 16px;
 	margin: 10px;
 	padding: 8px 16px;
 	transition: 0.2s;
+	box-shadow: 1px 12px 38px 2px rgba(0, 0, 0, 0.04);
 }
 #about-grid > div:hover {
-	box-shadow: 1px 12px 22px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 1px 12px 30px 3px rgba(0, 0, 0, 0.08);
 	cursor: default;
 	transform: translateY(-3px);
 }
@@ -326,11 +333,10 @@ section {
 	grid-gap: 40px 10px;
 }
 #skills img {
-	text-align: center;
-	padding: 5px;
 	height: 65px;
 	filter: grayscale(100%);
 	transition: 0.3s;
+	text-align: center;
 }
 #skills img:hover {
 	transform: scale(1.1);
@@ -363,7 +369,7 @@ section {
 }
 .owl-carousel img {
 	box-shadow: 1px 1px 5px 0 rgba(10, 10, 10, 0.5) !important;
-	border-radius: 3px;
+	border-radius: 16px;
 }
 .owl-prev,
 .owl-next {
@@ -418,7 +424,7 @@ section {
 #contact input {
 	background-color: #fff;
 	border: none;
-	border-radius: 2px;
+	border-radius: 8px;
 	box-shadow: 2px 2px 5px 0 rgba(10, 10, 10, 0.3);
 	outline: none;
 	padding: 5px 10px;
@@ -427,7 +433,7 @@ section {
 #contact textarea {
 	background-color: #fff;
 	border: none;
-	border-radius: 2px;
+	border-radius: 8px;
 	box-shadow: 2px 2px 5px 0 rgba(10, 10, 10, 0.3);
 	outline: none;
 	padding: 5px 10px;
@@ -437,7 +443,7 @@ section {
 #contact button {
 	background-color: #1f2125;
 	border: none;
-	border-radius: 2px;
+	border-radius: 8px;
 	box-shadow: 2px 2px 5px 0 rgba(10, 10, 10, 0.3);
 	color: #f4f4f4;
 	font-size: 1.2rem;
@@ -449,7 +455,7 @@ section {
 #contact button:hover {
 	background-color: #121316;
 	box-shadow: 2px 3px 6px 0 rgba(10, 10, 10, 0.3);
-	transform: translateY(-3px);
+	transform: translateY(-2px);
 }
 
 /* FOOTER */
@@ -493,13 +499,33 @@ section {
 	padding: 0;
 	margin: 0;
 }
-#footer > span > p {
+#footer > span > #copyright {
 	text-align: center;
 	color: #7a7a7a;
 	filter: brightness(70%);
 	padding: 0;
 	margin: 50px 0 0 0;
 }
+
+@keyframes rotating {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+#footer > span > #footnote {
+	text-align: center;
+	color: #7a7a7a;
+	filter: brightness(70%);
+	padding: 0;
+	margin: 10px 0 0 0;
+	color: #13aa52;
+}
+#footer > span > #footnote i {
+	animation: rotating 2s linear infinite;
+} 
 #footer h1 {
 	font-size: 1.8rem;
 }
@@ -511,6 +537,16 @@ section {
 @media (max-width: 700px) {
 	#about-grid {
 		display: block;
+	}
+	#about-grid > div {
+		margin-top: 24px;
+		transition: 0.2s;
+		box-shadow: 1px 12px 18px 2px rgba(0, 0, 0, 0.05);
+	}
+	#about-grid > div:hover {
+		box-shadow: 1px 12px 20px 2px rgba(0, 0, 0, 0.1);
+		cursor: default;
+		transform: translateY(-3px);
 	}
 	#about img {
 		max-width: 180px;
