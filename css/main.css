@@ -338,6 +338,7 @@ section {
 	transition: 0.3s;
 	text-align: center;
 }
+
 #skills img:hover {
 	transform: scale(1.1);
 }
@@ -509,12 +510,12 @@ section {
 
 @keyframes rotating {
 	from {
-	  transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
 	to {
-	  transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
-  }
+}
 #footer > span > #footnote {
 	text-align: center;
 	color: #7a7a7a;
@@ -525,7 +526,7 @@ section {
 }
 #footer > span > #footnote i {
 	animation: rotating 2s linear infinite;
-} 
+}
 #footer h1 {
 	font-size: 1.8rem;
 }
@@ -577,8 +578,11 @@ section {
 	#about-grid {
 		order: 2;
 	}
-	#skills > div > div {
+	#skills #techstack {
 		grid-template-columns: 1fr 1fr !important;
+	}
+	#skills #integration {
+		grid-template-columns: 1fr !important;
 	}
 	#contact input,
 	#contact textarea,
