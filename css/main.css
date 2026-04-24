@@ -368,8 +368,11 @@ section {
 	margin: auto;
 	z-index: 0 !important;
 }
+.owl-carousel > div {
+	padding-top: 6px;
+}
 .owl-carousel img {
-	box-shadow: 1px 1px 5px 0 rgba(10, 10, 10, 0.5) !important;
+	box-shadow: 1px 1px 5px 0 rgba(10, 10, 10, 0.2) !important;
 	border-radius: 16px;
 }
 .owl-prev,
